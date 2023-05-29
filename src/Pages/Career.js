@@ -2,7 +2,7 @@ import React from "react";
 
 import Navigation from "../Component/Navigation";
 
-const About = () => {
+const Career = () => {
   return (
     <div>
       <Navigation />
@@ -10,4 +10,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Career;
