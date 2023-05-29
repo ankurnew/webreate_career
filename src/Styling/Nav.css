@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    background-color: #171717;
+  }
+
+  .heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 2%;
+    font-size: 14px;
+    background: #ff8833;
+  }
+  .contact-link {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact-link a {
+    margin-left: 10px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: moving 0.5s ease;
+  }
+
+  @keyframes moving {
+    0% {
+      top: 10px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  nav {
+    position: fixed;
+    z-index: 25;
+    display: flex;
+    background: #171717;
+    height: 100px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: block;
+    list-style: none;
+  }
+
+  nav .mainMenu h3 {
+    color: #f4a660;
+    padding: 10% 0 2% 0;
+  }
+
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 3%;
+    padding-bottom: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    background: #f4a660;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 5%;
+    cursor: pointer;
+  }
+  .mainMenu .logo {
+    padding-top: 10%;
+    margin-left: 0;
+    color: #f4a660;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .fa-facebook {
+    color: #3b5998;
+  }
+  .fa-twitter {
+    color: #00acee;
+  }
+  .fa-instagram {
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    -webkit-background-clip: text;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .fa-github {
+    color: #f4a660;
+  }
+  nav .logo {
+    margin: 4%;
+    color: #f4a660;
+    font-size: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: block;
+      padding-left: 5%;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ease 0s;
+      animation: animate 1s ease;
+    }
+
+    nav .active {
+      color: #f4a660 !important;
+      font-weight: 900;
+    }
+
+    @keyframes animate {
+      0% {
+        top: -100%;
+      }
+      100% {
+        top: 0;
+      }
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 4%;
+      right: 6%;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: #f4a660;
+    }
+    .icons i {
+      display: inline-block;
+      padding: 4%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .whyweb {
+    display: flex;
+    align-items: flex-start;
+    padding: 4%;
+    padding-top: 0;
+    padding-bottom: 5%;
+    width: 76%;
+    overflow-y: scroll;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+  }
+
+  .whyweb .grow {
+    font-size: 20px;
+    margin: 8% 0 4% 0;
+    color: #ff8833;
+  }
+
+  .text-center {
+    text-align: start;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  br {
+    margin-bottom: 4%;
+  }
+
+  .text-center span {
+    display: list-item;
+    color: #ff8833;
+  }
+}
